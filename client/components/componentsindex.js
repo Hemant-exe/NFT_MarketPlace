@@ -9,4 +9,11 @@ import Title from "./Title/Title";
 import Category from "./Category/Category";
 import Filter from "./Filter/Filter";
 import NFTCard from "./NFTCard/NFTCard";
-export { Button, Footer, NavBar, HeroSection,Service,BigNFTSlider,Subscribe ,Title,Category,Filter,NFTCard };
+import Collection from "./Collection/Collection";
+import AudioLive from "./AudioLive/AudioLive";
+import LikeProfile from "./LikeProfile/LikeProfile";
+import FollowerTab from "./FollowerTab/FollowerTab";
+import Slider from "./Slider/Slider";
+import Brand from "./Brand/Brand";
+
+export { Button, Footer, NavBar, HeroSection,Service,BigNFTSlider,Subscribe ,Title,Category,Filter,NFTCard,Collection,AudioLive,LikeProfile,FollowerTab,Slider,Brand };
