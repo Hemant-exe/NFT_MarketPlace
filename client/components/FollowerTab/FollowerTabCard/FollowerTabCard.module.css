@@ -96,6 +96,7 @@
 
 @media screen and (min-device-width:320px)  {
     .FollowerTabCard_box_profile::before{
+        background-color: transparent; 
         left: 38%;
     }
 

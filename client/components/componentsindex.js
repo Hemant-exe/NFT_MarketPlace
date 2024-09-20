@@ -15,5 +15,6 @@ import LikeProfile from "./LikeProfile/LikeProfile";
 import FollowerTab from "./FollowerTab/FollowerTab";
 import Slider from "./Slider/Slider";
 import Brand from "./Brand/Brand";
+import Video from "./Video/Video";
 
-export { Button, Footer, NavBar, HeroSection,Service,BigNFTSlider,Subscribe ,Title,Category,Filter,NFTCard,Collection,AudioLive,LikeProfile,FollowerTab,Slider,Brand };
+export { Button, Footer, NavBar, HeroSection,Service,BigNFTSlider,Subscribe ,Title,Category,Filter,NFTCard,Collection,AudioLive,LikeProfile,FollowerTab,Slider,Brand ,Video,};
