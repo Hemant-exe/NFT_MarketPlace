@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect, useContext} from 'react'
 import Image from "next/image";
 import  Link from "next/link";
 
@@ -6,10 +6,14 @@ import {MdNotifications} from 'react-icons/md';
 import {BsSearch} from "react-icons/bs";
 import {CgMenuLeft, CgMenuRight} from "react-icons/cg";
 
+
 import Style from "./NarBar.module.css";
 import {Discover,HelpCenter,Notification,Profile,Sidebar} from "./index";
 import {Button} from "../componentsindex";
 import  images from "../../img";
+
+//IMPORT FROM SMART CONTRACT
+import { NFTMarketplaceContext } from '../../Context/NFTMarketplaceContext';
 
 
 const NavBar = () => {
@@ -69,7 +73,8 @@ const NavBar = () => {
       setOpenSideMenu(false);
     }
   };
-
+//SMART CONTRACT SECTION
+const{currentAccount,connectWallet}=useContext(NFTMarketplaceContext);
   return (
     <div className={Style.navBar}>
         <div className={Style.navbar_container}>
@@ -123,7 +128,13 @@ const NavBar = () => {
 
                 {/* CREATE BUTTON SECTION */}
                 <div className={Style.navbar_container_right_button}>
-                  <Button btnName="Create" handleClick={() => {}} />
+                  {currentAccount=="" ? (<Button btnName="Connect" handleClick={()=> connectWallet()}/>) : (
+                    <a href="/uploadNFT">
+                      <Button btnName="Create" handleClick={()=>{}}/>
+                    </a>
+                  
+                  )}
+                  
                 </div>
 
                 {/* USER PROFILE */}
