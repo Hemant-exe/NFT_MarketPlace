@@ -1,11 +1,11 @@
 import React, {useState,useEffect, useContext} from 'react'
 import Image from "next/image";
 import  Link from "next/link";
+import {DiJqueryLogo} from "react-icons/di";
 
 import {MdNotifications} from 'react-icons/md';
 import {BsSearch} from "react-icons/bs";
 import {CgMenuLeft, CgMenuRight} from "react-icons/cg";
-
 
 import Style from "./NarBar.module.css";
 import {Discover,HelpCenter,Notification,Profile,Sidebar} from "./index";
